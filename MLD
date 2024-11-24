@@ -1,0 +1,9 @@
+Departement: (idDepartement (PK), nomDepartement, localisation)
+
+Equipe: (idEquipe (PK), nomEquipe, description, idDepartement (FK))
+
+Employe: (idEmploye (PK), nom, prenom, poste, salaire, dateEmbauche, idEquipe (FK))
+
+Projet: (idProjet (PK), nomProjet, budget, dateDebut, dateFin)
+
+Employe_Projet: (idEmploye (FK, PK), idProjet (FK, PK))
